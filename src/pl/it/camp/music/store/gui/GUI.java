@@ -2,8 +2,10 @@ package pl.it.camp.music.store.gui;
 
 import pl.it.camp.music.store.model.*;
 
+import java.util.List;
+
 public class GUI {
-    public void showMainMenu() {
+    public static void showMainMenu() {
         System.out.println("1.List products");
         System.out.println("2.Buy product");
         System.out.println("3.Return the product");
@@ -12,8 +14,8 @@ public class GUI {
         System.out.println("Enter the number:");
     }
 
-    public void showAllProducts(Product[] products) {
-        for (Product product : products) {
+    public static void showAllProducts(List<Product> list) {
+        for (Product product : list) {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.append(product.getName() + ",")
                     .append(" ilość sztuk:")
@@ -62,7 +64,7 @@ public class GUI {
         System.out.println("---------------------");
     }
 
-    public void showSoldResult(boolean soldResult) {
+    public static void showSoldResult(boolean soldResult) {
         if (soldResult) {
             System.out.println("Bought!!");
         } else {
@@ -70,7 +72,7 @@ public class GUI {
         }
     }
 
-    public void showReturnResult(boolean returnResult) {
+    public static void showReturnResult(boolean returnResult) {
         if (returnResult)
             System.out.println("The product was returned.");
         else {
