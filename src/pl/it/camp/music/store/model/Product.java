@@ -1,6 +1,6 @@
 package pl.it.camp.music.store.model;
 
-public class Product {
+public abstract class Product {
     private String name;
     private int quantity;
     private String codeProduct;
@@ -8,13 +8,13 @@ public class Product {
     private double price;
     private boolean sell;//czy sprzedany
 
-    public Product(String name, int quantity, String codeProduct, String typeProduct, double price){
+    public Product(String name, int quantity, String codeProduct, String typeProduct, double price, boolean sell){
         this.name = name;
         this.quantity = quantity;
         this.codeProduct = codeProduct;
         this.typeProduct = typeProduct;
         this.price = price;
-        this.sell = false;
+        this.sell = sell;
     }
 
     public String getName() {
@@ -56,4 +56,6 @@ public class Product {
     public void setSell(boolean sell) {
         this.sell = sell;
     }
+
+    abstract public String convertToDbRecord();
 }

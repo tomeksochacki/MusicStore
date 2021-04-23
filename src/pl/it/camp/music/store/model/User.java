@@ -12,7 +12,7 @@ public class User {
 
     public User(String login, String password, String name, String sureName, String age, String phoneNumber){
         this.login = login;
-        this.password = password;
+        this.password = DigestUtils.md5Hex(password);
         this.name = name;
         this.sureName = sureName;
         this.age = age;
@@ -68,4 +68,25 @@ public class User {
     public String getPhoneNumber() {
         return phoneNumber;
     }
+
+    public String convertToDbRecord(){
+        StringBuilder sb = new StringBuilder();
+
+        sb.append("User:")
+                .append(this.getLogin())
+                .append(";")
+                .append(this.getPassword())
+                .append(";")
+                .append(this.getName())
+                .append(";")
+                .append(this.getSureName())
+                .append(";")
+                .append(this.getAge())
+                .append(";")
+                .append(this.getPhoneNumber())
+                .append(";");
+
+        return sb.toString();
+    }
+
 }

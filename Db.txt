@@ -1,0 +1,12 @@
+Gitara;Gitara basowa;3;0000;instrument smyczkowy - basowy;350.0;4;false
+Gitara;Gitara elektroniczna;4;0001;instrument smyczkowy - elektroniczny;750.0;6;false
+Gitara;Gitara klasyczna;1;0002;instrument smyczkowy - klasyczny;200.0;5;false
+Trąbka;Trąbka nowoczesna;3;0003;instrument dęty;400.0;4;true;false
+Trąbka;Trąbka klasyczna;7;0004;instrument dęty;550.0;3;true;false
+Wzmacniacz;Wzmacniacz Tehnics;0;0005;wzmacniacz;1000.0;true;true;false;300;false
+Wzmacniacz;Wzmacniacz Sony;7;0006;wzmacniacz;700.0;true;true;true;200;false
+Wzmacniacz;Wzmacniacz Philips;2;0007;wzmacniacz;500.0;false;false;false;170;false
+Perkusja;Perkusja Mapex;1;0008;instrument perkusyjny;1500.0;true;8;false
+Perkusja;Perkusja Millenium;10;0009;instrument perkusyjny;800.0;true;5;false
+User:tom;34b7da764b21d298ef307d04d8152dc5;;;;;
+User:;d41d8cd98f00b204e9800998ecf8427e;;;;;
